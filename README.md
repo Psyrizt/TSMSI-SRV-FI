@@ -1,22 +1,22 @@
-# TSMSISrv_poc
+# TSMSISRV-FI-POC
 
 ## Description
 
-The SessionEnv service, which is installed by default on Windows, contains a DLL hijack. When a user with administrative privilege can restart this service they could utilize it for lateral movement.
+The default service titled 'SessionEnv' contains a DLL hijack.
+A user with admin privileges can utilize this service for lateral movement to a remote machine using the Execute Method below.
 
-This C# POC code leverages the called functions of the TSMSISrv.dll by putting malicious logic within StartComponent.
+This POC in C# leverages the called functions of the TSMSISrv.dll by including malicious instructions within StartComponent.
 
 ## Build Process
 
-Ensure you have UnmanagedExports installed and are building for your target architecture. Then, you can simply build the release version of the project.
+Please ensure you have the UnmanagedExports Package installed and are building for your target architecture e.g Framework 4.0.
 
 ## Execution Instructions
 
-1. `sc.exe \\COMPUTER stop SessionEnv`
+1. `sc.exe \\REMOTECOMPUTER stop SessionEnv`
 2. `copy TSMSISrv.dll to C:\Windows\System32\TSMSISrv.dll`
-3. `sc.exe \\COMPUTER start SessionEnv`
+3. `sc.exe \\REMOTECOMPUTER start SessionEnv`
 
-Execution should have occurred adding a new user "demo".
+Execution should have occurred on the remote machine and added a new user called "RedUser"
 
-## Blog Details
-https://posts.specterops.io/lateral-movement-scm-and-dll-hijacking-primer-d2f61e8ab992
+Suggestion: Run the project through offensive pipeline to obfuscate the DLL.
