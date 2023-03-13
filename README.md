@@ -15,9 +15,9 @@ Please ensure you have the UnmanagedExports Package installed and are building f
 
 Other NuGet Packages that are required are: 
 
-Costura.Fody 3.3.3 - https://www.nuget.org/packages/Costura.Fody/3.3.3
-Fody 4.0.2 - https://nuget.info/packages/Costura.Fody/3.3.3
-Unmanaged Exports 1.2.7 - https://www.nuget.org/packages/Costura.Fody/3.3.3
+*Costura.Fody 3.3.3 - https://www.nuget.org/packages/Costura.Fody/3.3.3
+*Fody 4.0.2 - https://nuget.info/packages/Costura.Fody/3.3.3
+*Unmanaged Exports 1.2.7 - https://www.nuget.org/packages/Costura.Fody/3.3.3
 
 ## Execution Instructions
 
