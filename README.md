@@ -13,7 +13,7 @@ The result of the script: creates a new Windows user called 'RedUser'
 
 Please ensure you have the UnmanagedExports Package installed and are building for your target architecture e.g Framework 4.0.
 
-Other NuGet Packages that are required are: 
+Other NuGet Packages that are required for the build: 
 
 * Costura.Fody 3.3.3 - https://www.nuget.org/packages/Costura.Fody/3.3.3
 * Fody 4.0.2 - https://nuget.info/packages/Costura.Fody/3.3.3
