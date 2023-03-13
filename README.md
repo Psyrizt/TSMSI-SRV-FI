@@ -7,6 +7,8 @@ A user with admin privileges can utilize this service for lateral movement to a 
 
 This POC in C# leverages the called functions of the TSMSISrv.dll by including malicious instructions within StartComponent.
 
+the result of the script: creates a new Windows user called 'RedUser'
+
 ## Build Process
 
 Please ensure you have the UnmanagedExports Package installed and are building for your target architecture e.g Framework 4.0.
